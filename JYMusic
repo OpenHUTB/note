@@ -1,0 +1,34 @@
+
+多数PHP开源项目里有一个install.php的文件，这个文件就是该系统的安装文件，如果要安装的话，前提是要安装PHP的运行环境。
+PHP集成运行环境安装很简单，只需下一步，下一步即可完成。比如非常流行的XAMPP软件等等。安装完成后，按以下步骤操作即可：
+1.将项目复制到XAMPP安装目录下的htdocs文件夹下；
+2.然后启动php和mysql服务；
+3.打开浏览器，在地址栏输入：localhost/install.php，按回车即可进行安装。
+
+
+将【JYmusic程序文件】目录下的所有文件使用 FTP 软件以二进制方式上传到空间后，设置文件权限
+├─ addons 目录(包括子目录)必须有可写权限
+├─ config 文件夹 必须有可写权限
+├─ app 文件夹(包括子目录) 必须有可写权限
+├─ resources 目录(包括子目录)必须有可写权限
+├─ storage 文件夹 必须有可写权限
+├─ uploads 文件夹以及子目录必须有可写权限
+ 请注意 : 只需要给以上指定的文件夹及文件权限即可
+使用 FTP 软件登录您的服务器，将服务器上以上目录、以及该指定目录下面的所有文件的属性设置为 777，Win 主机请设置internet 来宾帐户可读写属性 
+
+
+./mysql -uroot -pubuntu -h127.0.0.1 -P3306
+
+
+ location / {
+            root   /home/ubuntu/JYMusic/JYmusic_2.0;
+            index  index.html index.htm;
+        }
+
+        location ~ \.php$ {
+                root           /home/ubuntu/JYMusic/JYmusic_2.0;
+                fastcgi_pass   127.0.0.1:9000;
+                fastcgi_index  index.php;
+                fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+                include        fastcgi_params;
+        }
