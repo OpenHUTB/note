@@ -85,7 +85,19 @@ fi
 
 # 命令
 
-重新设置远端地址
+## 添加其他仓库的超链接
+```shell
+git submodule add git@github.com:OpenHUTB/intelligent_traffic.git platform
+git commit -m '添加后端项目的链接'
+git push
+```
+添加子模块的操作同时克隆了其他仓库，其他仓库的链接换成https链接也可以，比如：
+```shell
+git submodule add  https://github.com/OpenHUTB/structure.git structure
+```
+
+
+## 重新设置远端地址
 git remote set-url origin https://gitee.com/dong_666/dong.git
 
 ## 搜索
