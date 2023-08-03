@@ -123,6 +123,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explore
 5、继续删除{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}
 6、退出注册表，刷新一下，就会发现3D对象文件夹不见了。
 
+
+# WSL
+[离线安装WSL系统](https://blog.csdn.net/qq_34548424/article/details/127421370) 
+
+
 # 命令
 开机自启目录：win+r
 ```bat
