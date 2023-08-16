@@ -17,12 +17,14 @@ tex文本与pdf文本相互定位：ctrl+鼠标点击，或者F7(显示鼠标位
 # matlab
 
 
-|     快捷键      |     说明      |
-|:------------:|:-----------:|
-| Ctrl+Shift+0 | 切换到editor窗口 |
-|    Ctrl+0    |  Command窗口  |
-|    Ctrl+2    |    当前文件夹    |
-|    Ctrl+0    |     工作区     |
+|     快捷键      |        说明         |
+|:------------:|:-----------------:|
+| Ctrl+Shift+0 |    切换到editor窗口    |
+|    Ctrl+0    |     Command窗口     |
+|    Ctrl+2    |       当前文件夹       |
+|    Ctrl+0    |        工作区        |
+|    Alt+Shift+E    | 在资源管理器中或Finder中显示 |
+
 
 ctrl+pageup和ctrl+pagedown之间可以实现在editor中所打开文件之间的切换
 
@@ -49,7 +51,7 @@ Previous Tab		+Ctrl+Shift+Tab
 Change Current Folder to Location:	Alt+Shift+F	(改变当前目录到脚本所在的目录)
 Comment								Ctrl+/
 Uncomment							Ctrl+,
-Show In Explorer or Finder 			Alt+Shift+E
+
 
 
 |     bin\win64下的可执行文件      |       说明       |

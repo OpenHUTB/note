@@ -386,6 +386,18 @@ git pull /git push (这里需要输入用户名和密码，以后就不用啦)
 
 放弃本地所有修改：git checkout .
 
+
+## [删除子模块](https://www.zadmei.com/zgzsczmk.html) 
+```shell
+# 取消注册子模块，从 git/config 文件中删除整个 submodule.$name 部分。此外，它还删除了子模块的工作树。
+git submodule deinit -f path/to/good-ext-lib
+# 从项目的 .git/modules 目录中删除子模块目录
+rm -rf .git/modules/path/to/good-ext-lib
+# 删除了超级项目（我们的项目）的跟踪数据。它删除了 gitlink 条目。此外，它消除了 .gitmodules 文件中存在的子模块部分并暂存该文件。
+git rm -f path/to/good-ext-lib
+```
+
+
 # TortoiseGit
 ## 进行回滚
 [版本回退](https://blog.51cto.com/u_13478207/3338212) 
