@@ -94,11 +94,18 @@ https://www.cnblogs.com/menkeyi/p/10941843.html
 
 
 1. 查看是否开启自动休眠
+```shell
 sudo systemctl status sleep.target
+```
 2. 关闭自动休眠
+```shell
 sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+```
 3. 查看自动休眠是否关闭
+```shell
 systemctl status sleep.target
+```
+
 
 
 
