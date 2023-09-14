@@ -5,7 +5,7 @@ sudo apt-get update
 sudo apt-get install oracle-java8-installer
 
 
-java9初体验
+# java9 安装
 1. 安装JDK9
 2. 安装Eclipse的Java9插件：Help -> Eclipse Marketplace -> Search -> java9
     需要更新Eclipse的Java9插件：Help -> Eclipse Marketplace -> Installed ->  Java 9 Support for Oxygen 4.7 -> update；不然添加JDK的时候出现：Target is not a JDK root错误
