@@ -1,6 +1,6 @@
 
 
-# 
+# 安装
 
 [参考链接](https://github.com/ymcui/Chinese-LLaMA-Alpaca/wiki/%E4%BD%BF%E7%94%A8text-generation-webui%E6%90%AD%E5%BB%BA%E7%95%8C%E9%9D%A2) 
 
