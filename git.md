@@ -66,8 +66,16 @@ git checkout --orphan latest_branch
 git add .
 git commit -m "init"
 git branch -D master
- git branch -m master
- git push -f origin master
+git branch -m master
+git push -f origin master
+```
+
+## git 推送出现 "fatal: The remote end hung up unexpectedly"
+原因是推送的文件太大。需要设置缓存：
+```shell
+git config http.postBuffer 524288000
+git config --global http.postBuffer 524288000
+git config --global https.postBuffer 1048576000
 ```
 
 
@@ -84,6 +92,18 @@ fi
 ```
 
 # 命令
+
+## 不显示未跟踪的文件
+```shell
+git status -uno
+```
+-u: --untracked-files
+
+## 将所有已修改的文件添加到暂存区
+```shell
+git add -u
+```
+-u: update tracked files
 
 ## 添加其他仓库的超链接
 ```shell
