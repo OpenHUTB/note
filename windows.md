@@ -37,6 +37,10 @@ C:\ProgramData中有一个Package Cache文件夹
 netstat -ano
 最后一列为PID
 tasklist|findstr "2720"
+杀进程
+```shell
+taskkill /pid 2000 -f
+```
 
 Win10打开开机启动目录
 shell:startup
