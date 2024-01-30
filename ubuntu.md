@@ -1,6 +1,14 @@
 
+# 虚拟机
+[磁盘扩充容量](https://blog.csdn.net/qq_34160841/article/details/113058756) 
+1. VMware 扩充容量；
+2. 到虚拟机中使用分区编辑器进行扩容；
+```shell
+gparted
+```
 
 
+# 其他
 去除chrome启动时需要输入密码：
 启动seahorse，在“密码-login”下修改密码为空。
 
