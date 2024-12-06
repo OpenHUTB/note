@@ -113,6 +113,19 @@ conda config --add channels r
 
 
 # Pycharm 
+
+## [添加查找文件内容时候的后缀过滤](https://blog.csdn.net/python_tty/article/details/122494267)
+
+找到`find.xml`文件，Win11下的默认路径为：`C:\Users\Administrator\AppData\Roaming\JetBrains\PyCharmCE2024.3\options\find.xml`。
+然后在find.xml文件中加入这几行：
+```shell
+<mask>*.md</mask>
+<mask>*.cpp</mask>
+<mask>*.h</mask>
+<mask>*.tex</mask>
+```
+保存文件，然后重启pycharm生效。
+
 ## 破解
 [破解方法](https://www.cnblogs.com/Dengv5/p/16418279.html) 
 
