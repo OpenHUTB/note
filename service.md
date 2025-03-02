@@ -394,24 +394,38 @@ systemctl reload nginx.service
 systemctl restart nginx.service
 systemctl status nginx.service
 
-
-
+```shell
+sudo apt install samba
+```
 服务器共享文件夹给Windows
+```shell
 vi /etc/samba/smb.conf
+```
+```text
 [share]
     path = /
     browseable = yes
     writeable = yes
+```
 （注意颜色必须变，避免敲错）
+```shell
 systemctl start smbd
 或者: sudo service smbd start
+```
+
 开机自启：
+```shell
 systemctl enable smbd
 检查自启动：systemctl is-enable smbd
 检查启动：  systemctl is-active smbd
+```
+
 
 创建samba创建用户名和密码
+```shell
 sudo smbpasswd -a d
+```
+
 Windows映射网络驱动器-> 文件夹
 \\115.157.195.140\share
 输出的网络凭证为samba的用户名和密码

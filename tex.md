@@ -53,6 +53,10 @@ C:\CTEX\MiKTeX\miktex\bin\bibtex.exe ieee	(Ctrl+Shift+B)
 
 # texstudio
 
+* 打开多个Texstudio窗口
+
+打开Texstudio的快捷方式（注意是你经常点击的快捷方式，可执行文件exe只有一个，但是快捷方式可以有很多个），右键快捷方式，进入属性，会看到“目标”，在应用的可执行文件路径之后加上：`--start-always"`。
+
 * 没有卸载重新安装texstudio的.deb文件报错
 ```shell script
 dpkg-deb: 错误: 粘贴 subprocess was killed by signal (断开的管道)

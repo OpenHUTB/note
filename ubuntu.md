@@ -8,7 +8,33 @@ gparted
 ```
 
 
+# 翻墙
+主要参考[链接](https://github.com/bannedbook/fanqiang/tree/master/linux) ：
+1. 下载`mihomo-linux-amd64`；
+2. 找到windows下Clash配置好的`BH专线版`，右键选择`文本编辑`，将配置复制到文件`~/.config/mihomo/config.yaml`中；
+3. 再次启动 mihomo。
+4. 打开 设置 -> 网络 -> 网络代理，配置 HTTP 代理和 socket 代理 分别为上面的端口号（一般是7890）。
+
+问题解决参考[链接](https://www.xudj.top/archives/clash) 。
+
+## 故障
+
+* 误删了`/lib64/ld-linux-x86-64.so.2`
+
+解决：
+
+执行 [以下命令](https://www.zhihu.com/question/385135873/answer/1140002759) 没有权限：
+```shell
+/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2 /bin/ln -s /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2 /lib64/ld-linux-x86-64.so.2
+```
+
+使用U盘启动，进入安全模式，将`/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2` 文件拷贝到 `/lib64/ld-linux-x86-64.so.2`
+
+
 # 其他
+
+[系统源代码仓库](http://archive.ubuntu.com/ubuntu/) 、[源代码镜像](https://cdimage.ubuntu.com/releases/22.04/release/source/) 。
+
 去除chrome启动时需要输入密码：
 启动seahorse，在“密码-login”下修改密码为空。
 
@@ -317,7 +343,8 @@ deb-src http://mirrors.163.com/ubuntu/ trusty-proposed main restricted universe 
 deb-src http://mirrors.163.com/ubuntu/ trusty-backports main restricted universe multiverse
 
 
-# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+*  默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+```shell
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial main restricted universe multiverse
 # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial main restricted universe multiverse
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-updates main restricted universe multiverse
@@ -326,6 +353,8 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-backports main restricte
 # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-backports main restricted universe multiverse
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-security main restricted universe multiverse
 # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-security main restricted universe multiverse
+```
+
 
 
 Q：curl不支持https协议

@@ -11,6 +11,10 @@ conda deactivate
 conda install --yes --file requirements.txtv
 ```
 
+* 运行`conda activate`报错：`CommandNotFoundError: Your shell has not been properly configured to use 'co`
+
+    解决：在开始菜单搜索运行`Anaconda Powershell Prompt`，然后执行激活虚拟环境命令。
+
 # 虚拟环境
 导出：
 ```buildoutcfg

@@ -7,6 +7,12 @@ tdb里文件体积都较小而rdb中文件体积都较大。据一些简单测�
 rdb（代表了一个MySQL数据库）中含有若干个MySQL数据表，其中与参考文献基本信息相关的是refs.*文件。[利用恢复数据库的方法，将这些文件恢复成MySQL数据库](https://stackoverflow.com/questions/879176/how-to-recover-mysql-database-from-myd-myi-frm-files) ：
 
 
+# 链接
+
+## 文献跳转
+参考[链接](https://blog.csdn.net/xbsigeibwkouvfcj/article/details/134572413)
+
+
 # 问题
 [修改作者名全是大写](https://blog.csdn.net/weixin_44029689/article/details/114580335)
 

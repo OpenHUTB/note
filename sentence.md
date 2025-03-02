@@ -37,6 +37,8 @@ Yesterday is history, tomorrow is a mystery, but today is gift. That's why we ca
 
 # 人生
 
+所有对星辰大海的追问，都是对于自身意义的追寻。
+
 人，这辈子做两件事就够了，找，自己心动的人，做，让自己心动的事。
 开怀畅饮吧，趁年华尚未消失，明日陶工将用你我尸土把陶罐制成。
 
@@ -90,6 +92,8 @@ Yesterday is history, tomorrow is a mystery, but today is gift. That's why we ca
 你喜欢的岁月静好，其实是大江奔流。
 你必须不停地奔跑，才能停在原地。
 
+因上努力，果上随缘。
+
 
 # 教育
 教育不是灌满一桶水，而是点燃一把火。
@@ -102,18 +106,6 @@ Yesterday is history, tomorrow is a mystery, but today is gift. That's why we ca
 
 
 # 其他
-
-
-致佳兴世尊感谢信
-在过去一周多的隔离期间，有幸得到佳兴世尊酒店工作人员事无巨细的照顾，对酒店员工这种负责的态度和任劳任怨的精神我表示万分敬意。同时我会将酒店的这种服务精神向身边的人宣传，让他们也入住佳兴世尊，体验贵酒店的服务。
-十分感谢，祝商祺！
-湖大王海东
-2022年4月6日
-
-
-
-
-
 
 骰子已被掷下，便无路可退。
 

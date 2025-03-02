@@ -131,6 +131,21 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explore
 # WSL
 [离线安装WSL系统](https://blog.csdn.net/qq_34548424/article/details/127421370) 
 
+## 显卡驱动
+```shell
+sudo apt install nvidia-cuda-toolkit
+```
+
+## 密码不正确
+进入powershell
+```shell
+wsl -u root
+```
+重置特定用户密码：
+```shell
+passwd userid
+```
+
 
 # 命令
 开机自启目录：win+r

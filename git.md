@@ -8,6 +8,21 @@
 https://nongfugengxia:donghaiwang.1@gitee.com/nongfugengxia/dong.git
 ```
 
+# 流程
+
+## 分支领先于目标仓库的提交
+github页面中出现领先于目标分支：`This branch is 2 commits ahead of...`，想要丢弃所产生的不需要的提交记录
+1.回溯到两次提交之前
+```shell
+git reset --hard HEAD~2
+```
+
+2.强制把回溯之后的现状推送到github
+```shell
+git push -f
+```
+
+注意：如果出现落后于目标分支，则点击`Sync fork`进行于目标分支的同步，然后同步到本地。
 
 # 问题
 ## 头指针分离于 baf67ff
@@ -41,6 +56,14 @@ git reset --hard commit_id
 ```shell
 git push origin HEAD --force
 ```
+
+[git reset 三种模式的区别和使用场景（hard, soft, mixed）](https://blog.csdn.net/liaomingwu/article/details/121588217)
+
+--head：都无差异
+
+--soft：差异会放在index暂存区
+
+--mixed：差异放在working tree工作目录和index暂存区
 
 
 ### 撤销所有的已经add的文件  
@@ -92,6 +115,36 @@ fi
 ```
 
 # 命令
+
+## [reset soft, mixed, hard的区别](http://zhk.me/1366.html)
+
+
+## 创建新的hutb分支
+```shell
+#第1步，在本地创建一个test分支，并切换到该分支。此时执行git branch会看到该分支在本地已创建
+git checkout -b hutb
+#第2步，把分支推到远程仓库。此时执行git branch -av可以看到该分支在远程仓库也有了
+git push origin hutb
+#第3步，将本地分支与远程分支关联
+git branch --set-upstream-to=origin/hutb hutb
+```
+
+## 拉取所有远程分支
+```shell
+git clone xxx
+git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
+git fetch --all
+git pull --all
+```
+注意：window系统的cmd无法识别第一步中的命令，请使用git bash命令行。
+
+
+## 下载并应用补丁
+1. 直接在commit的链接后加上 `.patch`，然后保存到本地的工程目录下。
+2. 应用下载的补丁：
+```shell
+git apply bootstrap.patch
+```
 
 ## 不显示未跟踪的文件
 ```shell
@@ -421,3 +474,10 @@ git rm -f path/to/good-ext-lib
 # TortoiseGit
 ## 进行回滚
 [版本回退](https://blog.51cto.com/u_13478207/3338212) 
+1.右键 TortoiseGit -> show log 选择所需要回溯的版本，右键选择 `Reset master to this`，选择`Hard: Reset working tree and index(discard all local changes)`。
+
+2.命令行执行：
+```shell
+git push -f
+```
+

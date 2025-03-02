@@ -407,6 +407,8 @@ Ctrl+Alt+S: 添加/删除单词
 # chrome
 置顶：Alt+Space, Always on Top
 
+取消置顶        Ctrl+Alt+Esc, 然后重启Chrome
+
 Alt+E           打开菜单
 
 vimium (http://einverne.github.io/post/2017/12/most-useful-chrome-shortcut.html)
