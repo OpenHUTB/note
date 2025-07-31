@@ -1,5 +1,3 @@
-
-
 # 进程
 ## 使用Process Explorer查看程序加载的dll
 [参考](https://blog.csdn.net/qq_45237725/article/details/116358241)
@@ -8,6 +6,10 @@
 ```commandline
 Listdlls viso2pdf
 ```
+
+## windows系统卸载程序时提示：`请等待当前进程完成卸载或更改`
+
+解决：在任务管理器中结束dllhost.exe进程。
 
 
 # 网络
