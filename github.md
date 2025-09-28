@@ -50,6 +50,9 @@ Windows
 git update-index --chmod=+x script.sh
 ```
 
+## Pull Request
+在 Pull Request 页面的链接（比如`https://github.com/Tiryoh/actions-mkdocs/pull/224` ）后增加`.patch`即可获得patch 文件。
+
 
 ## 其他
 项目标签:

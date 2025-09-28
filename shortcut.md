@@ -826,8 +826,17 @@ Toggle fullscreen/Maximize terminal: F11
 
 
 # VS
+
 Ctrl+-          函数跳转后回退
 
+
+# VScode
+
+快捷键               | 说明
+:---:               | :---:
+Shift+Alt+鼠标左键         | 列选择模式
+
+  
 
 # Navicate
 http://www.cnblogs.com/zx-admin/p/6343346.html

@@ -4,6 +4,17 @@
 [在指定位置插入endnote文献列表](https://www.likecs.com/show-204025792.html)
 
 
+# excel
+如何快速比较excel中两列数据中的相同数据、不同数据（A列和B列做对比），如果需要，将上述相同或不同数据提取出来
+
+在C1输入公式
+```shell
+=MATCH(A1,B:B,)
+```
+
+回车后下拉公式，如果返回的是数字，比如说C1的3，就说明A1单元格的内容再B列里第3行存在，也就是B3="A"。如果A列的内容再B列里没有就返回错误值#N/A
+
+
 # 学术
 Google提示your computer or network may be sending automated queries
 
