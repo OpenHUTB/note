@@ -18,6 +18,9 @@ Listdlls viso2pdf
 curl ip.me
 ```
 
+* 限制网速
+[NetLimiter](https://netlimiter.com/download) 。
+
 
 # 设置
 ## 权限
